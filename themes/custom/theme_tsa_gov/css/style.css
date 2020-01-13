@@ -1,0 +1,257 @@
+/**
+ * @file
+ * Subtheme specific CSS.
+ */
+ 
+body{
+	padding:0;
+	font-family: 'Open Sans', sans-serif;
+	background:#fff;
+}
+body a{
+    transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+	font-weight:400;
+	font-family: 'Open Sans', sans-serif;
+}
+input[type="button"],input[type="submit"]{
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+h1,h2,h3,h4,h5,h6{
+	color:#000000;
+	margin:0;		
+	font-weight:400;
+	font-family: 'Tinos';
+    transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}	
+p{
+	margin:0;
+	font-family: 'Open Sans', sans-serif;
+}
+ul{
+	margin:0;
+	padding:0;
+}
+label{
+	margin:0;
+}
+
+h1 { font-family: Tinos; font-size: 42px; font-style: normal; font-variant: normal; font-weight: 400;  margin:20px 0;}
+h2 { font-family: Tinos; font-size: 30px; font-style: normal; font-variant: normal; font-weight: 400;  margin:15px 0; line-height:35px; }
+h3 { font-family: Tinos; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; margin:15px 0; line-height: 15.4px; }
+h4 { font-family: Tinos; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 700; margin:15px 0; line-height: 15.4px; }
+p { font-family: Open Sans; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 23px; } 
+blockquote { font-family: Open Sans; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; }
+pre { font-family: Open Sans; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5667px;}
+
+.block-block-content {margin-bottom:50px;}
+
+
+/*------------------- Button------------------------------*/
+
+.btn-primary {
+   text-transform: uppercase;
+   font-weight:600;
+   color:#e5e5e5;
+   padding: 0.175rem .275rem; 
+}
+
+.btn-secondry {
+	background-image: url('/sites/default/files/images/seconderybtnbg.png'); 
+	background-repeat:repeat-x;
+	font-family: Open Sans;
+    font-style: italic;
+    font-size: 18px;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+}
+
+/*-------------------- Color -------------------------------*/
+.light-blue { color:#006699;}
+.
+ 
+#navbar-main {margin-top:40px;}
+.navbar-brand img { width: 250px; height: 60px; }
+.nav-link {padding:0.3rem 1.5rem;}
+#block-mainnavigation li a {color:#333333;}
+#block-rolesattsanavblock {margin-bottom:0px; text-align:center;}
+#block-rolesattsanavblock li{list-style:none;}
+#block-rolesattsanavblock .dropdown{position:relative}
+#block-rolesattsanavblock li a{float:left;padding:35px}
+#block-rolesattsanavblock li ul{display:inline}
+#block-rolesattsanavblock .mega-dropdown{display:none; text-align:left;}
+#block-rolesattsanavblock li li{float:none}
+#block-rolesattsanavblock .dropdown ul{position:absolute;left:0;top:100%;background:#fff;padding:20px 0;border-bottom:3px solid #34495e}
+#block-rolesattsanavblock .dropdown li{white-space:nowrap}
+#block-rolesattsanavblock .dropdown li a{padding:10px 35px;font-size:13px;min-width:200px}
+#menu-icon1 {padding:10px;}
+.mega-dropdown{width:100%;position:absolute;top:100%;left:0;background:#fff;overflow:hidden;padding:20px 35px;border-bottom:3px solid #34495e; z-index:1}
+#block-rolesattsanavblock li li a{float:none;color:#333;display:block;padding:8px 0; border-radius:3px; text-decoration:none !important;}
+li.menu-link .active {border-bottom: 2px solid #ef294c;}
+#menu-icon{position:absolute;right:0;top:50%;margin-top:-12px;margin-right:30px;display:none}
+.menu-content p {color: #ef294c;}
+.menu-link .arrow:before {content: "▼";position: relative;z-index: 1; text-align: center; width: 10%; height: 100%;color: #333;}
+.menu-content h3 {font-size: 21px;font-weight: bold;text-transform: capitalize;line-height: 27px;margin-top: 10px;}
+#menu-icon span{border:2px solid #000;width:30px;margin-bottom:5px;display:block;-webkit-transition:all .2s;transition:all .1s}
+.rolemenu1 {background-image: url('/sites/default/files/images/tsaroles2.png');background-repeat: no-repeat;background-position: right top;min-height: 150px;}
+.rolemenu2 {background-image: url('/sites/default/files/images/tsaroles3.png');background-repeat: no-repeat;background-position: right top;min-height: 150px;}
+.rolemenu3 {background-image: url('/sites/default/files/images/tsaroles1.png');background-repeat: no-repeat;background-position: right top;min-height: 150px;}
+
+
+
+
+#block-theme-tsa-gov-footermenu .nav li { float:left;  }
+#block-theme-tsa-gov-footermenu {float: left; margin-bottom: 36px; text-transform: uppercase; font-weight: bold; clear:none;}
+#block-theme-tsa-gov-footersocialmediaicons {float:right; clear:none;}
+#block-theme-tsa-gov-footercontent {clear:both; border-top:0.01em solid #aaa;padding-top:45px;}
+
+
+#block-ourmissionhome .ourmissiontop {
+  background-image: url('/sites/default/files/images/rolesattsaleft.png'); 
+  background-repeat: no-repeat; 
+  background-position: right top;
+}
+
+#block-ourmissionhome .ourmissioninner {
+  background-image: url('/sites/default/files/images/ourmissionbg.png');
+  background-repeat: no-repeat; 
+  position: relative;
+  min-height:400px;   
+  width:100%
+}
+#block-ourmissionhome .ourmissioninner div {
+	position: absolute; 
+	right: 0; bottom:0; 
+	text-align: left; 
+	#padding: 1rem 2rem 1rem 1rem; 
+	background:#ffffff;
+}
+
+#block-rolesattsahome .rolesattsatop {
+  background-image: url('/sites/default/files/images/rolesattsaleft.png'); 
+  background-repeat: no-repeat; 
+  background-position: left top;
+  height: 125px; 
+  position: relative;
+}
+
+#block-rolesattsahome .roleicon { 	
+	background-repeat: no-repeat; 
+	background-position:right:top; 
+	width:100px; 
+	position: absolute; 
+	right:0; 
+	top:0; 
+	min-height:250px; 
+}
+
+.roleiconbg1 {background-image: url('/sites/default/files/images/tsaroles2.png'); }
+.roleiconbg2 {background-image: url('/sites/default/files/images/tsaroles1.png'); }
+.roleiconbg3 {background-image: url('/sites/default/files/images/tsaroles3.png'); }
+
+#block-rolesattsahome .roledetail {
+	margin-top:58px; 
+	position:relative; 
+	padding: 20px; 
+	text-align: left;
+}
+#block-rolesattsahome h1 { position: absolute; bottom: 0; left: 0; }
+#block-rolesattsahome .roledetail h3 {color:#cc0033;}
+
+
+  
+
+#block-tsafactshome .tsafactstop {
+  background-image: url('/sites/default/files/images/tsafactright.png'); 
+  background-repeat: no-repeat; 
+  background-position: right top;
+  height: 125px; 
+  position: relative;
+}
+#block-tsafactshome h1 { position: absolute; bottom: 0; left: 0; }
+
+#block-areyouaveteranhome .areyouaveteran {
+  background-image: url('/sites/default/files/images/areyouaveteran.png'); 
+  background-repeat: no-repeat; 
+  background-size:contain; 
+  height:auto;
+}
+
+#block-views-block-job-events-block-1 h2 { 
+	background-image: url('/sites/default/files/images/tsafactright.png'); 
+	background-repeat: no-repeat; 
+	background-position: left top; 
+	height: 125px; 
+	position: relative; 
+	padding-left:8.333333%;
+	text-align:left;
+	vertical-align: bottom;
+	margin:0;
+	padding-top:80px;
+	font-size:42px;
+}
+#block-views-block-job-events-block-1 .content {
+    margin-top: 30px;
+    margin-left:8.33%;
+}
+
+#block-views-block-job-events-block-1 .views-row {width: 100%; padding-bottom: 26px; border-bottom: 1px solid; margin-top:30px;}
+#block-views-block-job-events-block-1 h4 {color:#003366;}
+
+
+
+
+
+.site-footer {padding-bottom:0;}
+footer .container {background:#eeeeee;}
+.site-footer__bottom { padding: 0 30px; }
+.site-footer .content { color:#000000; }
+.site-footer__bottom .block {margin-bottom:0;}
+
+/*.navbar-default { background:none; border:none;}
+.footer { }
+*/
+
+
+/*-- responsive media queries --*/
+@media (max-width: 1366px){
+}
+@media (min-width: 1200px){
+ #block-mainnavigation {margin-left:100px;}
+}
+@media (max-width: 1280px){
+}
+@media (max-width: 1080px){
+}
+@media (max-width: 991px){
+}
+@media (max-width: 900px){	
+}
+@media (max-width: 800px){
+}
+@media (max-width: 640px){
+}
+@media (max-width: 480px){
+}
+@media (max-width: 414px){
+}
+@media (max-width: 375px){	
+}
+@media (max-width: 320px){	
+}
+@media (min-width: 768px){
+}
+
+
