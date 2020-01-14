@@ -54,7 +54,10 @@ h4 { font-family: Tinos; font-size: 20px; font-style: normal; font-variant: norm
 p { font-family: Open Sans; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 23px; } 
 blockquote { font-family: Open Sans; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; }
 pre { font-family: Open Sans; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5667px;}
-
+a{color:#333333;}
+.nav-link {color:#333333}
+.navbar-light .navbar-nav .nav-link {color:#333333;}
+ 
 .block-block-content {margin-bottom:50px;}
 
 
@@ -89,14 +92,13 @@ pre { font-family: Open Sans; font-size: 13px; font-style: normal; font-variant:
 #block-rolesattsanavblock {margin-bottom:0px; text-align:center;}
 #block-rolesattsanavblock li{list-style:none;}
 #block-rolesattsanavblock .dropdown{position:relative}
-#block-rolesattsanavblock li a{float:left;padding:35px}
 #block-rolesattsanavblock li ul{display:inline}
 #block-rolesattsanavblock .mega-dropdown{display:none; text-align:left;}
 #block-rolesattsanavblock li li{float:none}
 #block-rolesattsanavblock .dropdown ul{position:absolute;left:0;top:100%;background:#fff;padding:20px 0;border-bottom:3px solid #34495e}
 #block-rolesattsanavblock .dropdown li{white-space:nowrap}
 #block-rolesattsanavblock .dropdown li a{padding:10px 35px;font-size:13px;min-width:200px}
-#menu-icon1 {padding:10px;}
+
 .mega-dropdown{width:100%;position:absolute;top:100%;left:0;background:#fff;overflow:hidden;padding:20px 35px;border-bottom:3px solid #34495e; z-index:1}
 #block-rolesattsanavblock li li a{float:none;color:#333;display:block;padding:8px 0; border-radius:3px; text-decoration:none !important;}
 li.menu-link .active {border-bottom: 2px solid #ef294c;}
@@ -108,6 +110,7 @@ li.menu-link .active {border-bottom: 2px solid #ef294c;}
 .rolemenu1 {background-image: url('/sites/default/files/images/tsaroles2.png');background-repeat: no-repeat;background-position: right top;min-height: 150px;}
 .rolemenu2 {background-image: url('/sites/default/files/images/tsaroles3.png');background-repeat: no-repeat;background-position: right top;min-height: 150px;}
 .rolemenu3 {background-image: url('/sites/default/files/images/tsaroles1.png');background-repeat: no-repeat;background-position: right top;min-height: 150px;}
+#block-applymenu .nav-link {color:#ffffff};
 
 
 
@@ -214,8 +217,17 @@ li.menu-link .active {border-bottom: 2px solid #ef294c;}
 
 
 
-.site-footer {padding-bottom:0;}
+/*.site-footer {padding-bottom:0;}
 footer .container {background:#eeeeee;}
+.site-footer__bottom { padding: 0 30px; }
+.site-footer .content { color:#000000; }
+.site-footer__bottom .block {margin-bottom:0;}*/
+
+.site-footer {padding-bottom:0;}
+footer .container {background:#e5e5e5; border-top:2px solid #cccccc; padding-bottom:30px;}
+footer .nav-link {color: #333333; font-size: 14px; font-weight: 700; text-transform: uppercase;}
+footer .footer-social-media-icons {width: 22px;height: 22px;margin: 0 .235rem;}
+footer p {font-size: 14px; line-height: 16px; color: #333333; }
 .site-footer__bottom { padding: 0 30px; }
 .site-footer .content { color:#000000; }
 .site-footer__bottom .block {margin-bottom:0;}
@@ -236,20 +248,23 @@ footer .container {background:#eeeeee;}
 @media (max-width: 1080px){
 }
 @media (max-width: 991px){
+	.mega-dropdown {position:relative;}
+	#block-theme-tsa-gov-main-menu {text-align:center;}
+	
 }
-@media (max-width: 900px){	
+@media (min-width: 992px){
+	.navbar-expand-lg .navbar-nav .nav-link {
+       padding-right: 1.5rem;
+       padding-left: .5rem;
+	}
 }
-@media (max-width: 800px){
-}
-@media (max-width: 640px){
-}
-@media (max-width: 480px){
+
+@media (max-width: 767px){
+	
+   h1 { font-size: 32px;font-weight: 400;  margin:20px 0;}
+   h2 { font-size: 21px; margin:15px 0; line-height:35px; }
 }
 @media (max-width: 414px){
-}
-@media (max-width: 375px){	
-}
-@media (max-width: 320px){	
 }
 @media (min-width: 768px){
 }
