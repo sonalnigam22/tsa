@@ -1,0 +1,9 @@
+tsa_events.form:
+  path: '/admin/structure/tsa_events/upload'
+  defaults:
+    _form: '\Drupal\tsa_events\Form\EventsUploadForm'
+    _title: 'Add Event'
+  
+  requirements:
+    _role: 'administrator'
+    

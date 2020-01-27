@@ -45,3 +45,20 @@ function theme_tsa_gov_preprocess_page(&$variables)
 
   $variables['navbar_attributes']['class'][] = 'navbar-light';
 }
+
+
+
+function theme_tsa_gov_preprocess_menu(&$variables) {
+  if (isset($variables['menu_name']) && $variables['menu_name'] === 'account') { 
+    foreach($variables['items'] as $key => $item) { 
+		  $path = $item['url']->toString();	   	     
+      switch($path) {
+        case '/user/login':
+		   if(\Drupal::currentUser()->isAuthenticated()){ 
+               unset($variables['items'][$key]);
+		   }
+        break;          
+      }           
+    }
+  }
+} 

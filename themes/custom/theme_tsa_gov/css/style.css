@@ -60,8 +60,11 @@ a{color:#333333;}
  
 .block-block-content {margin-bottom:50px;}
 
-
+.l-gray {background:#eeeeee;}
 /*------------------- Button------------------------------*/
+
+.field--name-field-event-start-date , .field--name-field-event-end-date  {display:inline;}
+
 
 .btn-primary {
    text-transform: uppercase;
@@ -83,9 +86,11 @@ a{color:#333333;}
 
 /*-------------------- Color -------------------------------*/
 .light-blue { color:#006699;}
-.
- 
-#navbar-main {margin-top:40px;}
+
+.navbar { padding:0.9rem 1rem 0px }
+#navbar-main { border-bottom:0.1rem solid #eee; }
+
+
 .navbar-brand img { width: 250px; height: 60px; }
 .nav-link {padding:0.3rem 1.5rem;}
 #block-mainnavigation li a {color:#333333;}
@@ -98,6 +103,25 @@ a{color:#333333;}
 #block-rolesattsanavblock .dropdown ul{position:absolute;left:0;top:100%;background:#fff;padding:20px 0;border-bottom:3px solid #34495e}
 #block-rolesattsanavblock .dropdown li{white-space:nowrap}
 #block-rolesattsanavblock .dropdown li a{padding:10px 35px;font-size:13px;min-width:200px}
+#block-theme-tsa-gov-main-menu .dropdown-menu ul { display:flex;}
+#block-theme-tsa-gov-main-menu .dropdown-menu ul li { min-width:200px; padding: .5rem 1.5rem; }
+
+
+
+.nav-link {color:#333333; font-size:13px; font-weight:700;}
+#block-theme-tsa-gov-main-menu .nav-item {padding: 20px 0px;}
+.navbar-expand-lg .navbar-nav .dropdown-menu { top: 69px; left:-40px; padding: 30px 30px; }
+ ul > .show { border-bottom:3px solid red;}
+ #block-useraccountmenu ul {justify-content:end; display:block; }
+ #block-useraccountmenu ul a {text-transform:uppercase;}
+ #block-useraccountmenu .nav .nav-item:nth-child(1) {float:right; font-weight:600; color:#e5e5e5; padding: .6rem 1.5rem ; background-color:#006599; border-color: #006599; text-align:center; }
+ #block-useraccountmenu .nav .nav-item:nth-child(1) a { color:#ffffff; }
+ #block-useraccountmenu .nav .nav-item:nth-child(2) {float:right;}
+ #block-useraccountmenu .nav .nav-item:last-child {float:left; padding:1rem 0; }
+ #block-useraccountmenu .nav .dropdown-menu {display:none; padding: 10px; left: 0; text-align: center; max-width:80%; margin:auto;}
+ #block-useraccountmenu .nav .show {display:block;}
+ #block-applymenu ul li {width:100%;}
+
 
 .mega-dropdown{width:100%;position:absolute;top:100%;left:0;background:#fff;overflow:hidden;padding:20px 35px;border-bottom:3px solid #34495e; z-index:1}
 #block-rolesattsanavblock li li a{float:none;color:#333;display:block;padding:8px 0; border-radius:3px; text-decoration:none !important;}
@@ -192,7 +216,7 @@ li.menu-link .active {border-bottom: 2px solid #ef294c;}
   height:auto;
 }
 
-#block-views-block-job-events-block-1 h2 { 
+#block-views-block-job-event-search-block-1 h2 { 
 	background-image: url('/sites/default/files/images/tsafactright.png'); 
 	background-repeat: no-repeat; 
 	background-position: left top; 
@@ -205,13 +229,21 @@ li.menu-link .active {border-bottom: 2px solid #ef294c;}
 	padding-top:80px;
 	font-size:42px;
 }
-#block-views-block-job-events-block-1 .content {
+#block-views-block-job-event-search-block-1 .content {
     margin-top: 30px;
     margin-left:8.33%;
 }
 
-#block-views-block-job-events-block-1 .views-row {width: 100%; padding-bottom: 26px; border-bottom: 1px solid; margin-top:30px;}
-#block-views-block-job-events-block-1 h4 {color:#003366;}
+#block-views-block-job-event-search-block-1 .views-row {width: 100%; padding-bottom: 26px; border-bottom: 1px solid; margin-top:30px;}
+#block-views-block-job-event-search-block-1 h4 {color:#003366;}
+#views-exposed-form-job-event-search-page-1 label {display:none;}
+#views-exposed-form-job-event-search-page-1 .btn-primary {padding:.4rem 2rem;}
+#views-exposed-form-job-event-search-page-1 .form-row {justify-content:center;}
+
+
+.view-event-search-list {width: 100%; padding-bottom: 26px; border-bottom: 1px solid; margin-top:30px;}
+
+
 
 
 
@@ -249,7 +281,24 @@ footer p {font-size: 14px; line-height: 16px; color: #333333; }
 }
 @media (max-width: 991px){
 	.mega-dropdown {position:relative;}
-	#block-theme-tsa-gov-main-menu {text-align:center;}
+	
+	#block-theme-tsa-gov-main-menu {text-align:left; border-top:.1rem solid #eeeeee}
+	#block-theme-tsa-gov-main-menu .dropdown-menu { border:none;}
+	#block-theme-tsa-gov-main-menu .dropdown-menu ul { display:block; border:none;}
+	ul > .show {border:none;}
+	.navbar-nav .show .dropdown-toggle {display:inline ; border-bottom: 4px solid red;}
+	#navbar-main {border-bottom:none;}
+	#block-theme-tsa-gov-main-menu .dropdown-menu ul li {padding-left:0px;}
+	.navbar-brand {margin:0 -30px}
+	.navbar-expand-lg .navbar-nav .dropdown-menu {padding:30px 0px 0px;}
+	#block-useraccountmenu {border-top:.1rem solid #eeeeee; padding:30px;}
+	#block-useraccountmenu ul {text-align:center;}
+	/*#block-useraccountmenu ul {justify-content:center;}
+	#block-useraccountmenu ul a {margin:20px;}*/
+	#block-useraccountmenu ul li {width:50%}
+	
+	
+	
 	
 }
 @media (min-width: 992px){
@@ -257,16 +306,22 @@ footer p {font-size: 14px; line-height: 16px; color: #333333; }
        padding-right: 1.5rem;
        padding-left: .5rem;
 	}
+	#block-useraccountmenu ul li {width:50% ; text-align:right;}
+	
+
 }
 
 @media (max-width: 767px){
 	
    h1 { font-size: 32px;font-weight: 400;  margin:20px 0;}
    h2 { font-size: 21px; margin:15px 0; line-height:35px; }
+   #block-useraccountmenu ul li {width:100%}
+   
 }
 @media (max-width: 414px){
 }
 @media (min-width: 768px){
+	
 }
 
 
