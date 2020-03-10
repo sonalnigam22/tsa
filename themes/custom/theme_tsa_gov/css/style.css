@@ -48,16 +48,19 @@ label{
 }
 
 h1 { font-family: Tinos; font-size: 42px; font-style: normal; font-variant: normal; font-weight: 400;  margin:20px 0;}
-h2 { font-family: Tinos; font-size: 30px; font-style: normal; font-variant: normal; font-weight: 400;  margin:15px 0; line-height:35px; }
+h2 { font-family: Tinos; font-size: 30px; font-style: normal; font-variant: normal; font-weight: 700;  margin:15px 0; line-height:35px; }
 h3 { font-family: Tinos; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; margin:15px 0; line-height: 15.4px; }
-h4 { font-family: Tinos; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 700; margin:15px 0; line-height: 15.4px; }
+h4 { font-family: Tinos; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 700; margin:15px 0; line-height: 22.4px; }
 p { font-family: Open Sans; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 23px; } 
 blockquote { font-family: Open Sans; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; }
 pre { font-family: Open Sans; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5667px;}
 a{color:#333333;}
-.nav-link {color:#333333}
-.navbar-light .navbar-nav .nav-link {color:#333333;}
- 
+
+/*header .container {background:#000000;}
+header .navbar { padding:0px 1rem 0px }
+header .nav-link {color:#ffffff !important;}*/
+
+
 .block-block-content {margin-bottom:50px;}
 
 .l-gray {background:#eeeeee;}
@@ -67,10 +70,14 @@ a{color:#333333;}
 
 
 .btn-primary {
-   text-transform: uppercase;
    font-weight:600;
    color:#e5e5e5;
-   padding: 0.175rem .275rem; 
+   #padding: 0.175rem .275rem; 
+   padding: 0.5rem 1.5rem;
+   margin-top:20px;
+   line-height: 26.4px;
+   font-variant: normal; 
+   font-size: 18px;   
 }
 
 .btn-secondry {
@@ -82,13 +89,14 @@ a{color:#333333;}
     font-variant: normal;
     font-weight: 700;
     line-height: 26.4px;
+	margin-top:20px;
 }
 
 /*-------------------- Color -------------------------------*/
 .light-blue { color:#006699;}
 
-.navbar { padding:0.9rem 1rem 0px }
-#navbar-main { border-bottom:0.1rem solid #eee; }
+
+
 
 
 .navbar-brand img { width: 250px; height: 60px; }
@@ -121,6 +129,9 @@ a{color:#333333;}
  #block-useraccountmenu .nav .dropdown-menu {display:none; padding: 10px; left: 0; text-align: center; max-width:80%; margin:auto;}
  #block-useraccountmenu .nav .show {display:block;}
  #block-applymenu ul li {width:100%;}
+ #block-exposedformsearch-contentpage-1-2 { float:right; }
+ .events-calendar-page {margin:auto;}
+ .dropdown:hover .dropdown-menu {display:block;}
 
 
 .mega-dropdown{width:100%;position:absolute;top:100%;left:0;background:#fff;overflow:hidden;padding:20px 35px;border-bottom:3px solid #34495e; z-index:1}
@@ -134,7 +145,13 @@ li.menu-link .active {border-bottom: 2px solid #ef294c;}
 .rolemenu1 {background-image: url('/sites/default/files/images/tsaroles2.png');background-repeat: no-repeat;background-position: right top;min-height: 150px;}
 .rolemenu2 {background-image: url('/sites/default/files/images/tsaroles3.png');background-repeat: no-repeat;background-position: right top;min-height: 150px;}
 .rolemenu3 {background-image: url('/sites/default/files/images/tsaroles1.png');background-repeat: no-repeat;background-position: right top;min-height: 150px;}
-#block-applymenu .nav-link {color:#ffffff};
+#block-applymenu .nav-link {color:#ffffff ;}
+#block-careersattsaoneagencyblock , #block-lawenforcementcareerblock {background:#eee; padding:50px 0;}
+#block-careersattsaoneagencyblock .actionbtn { margin:20px 0;}
+
+/**Career Page**/
+#block-careerspecifichiringinformation h2  { margin-bottom:30px; }
+#block-careerspecifichiringinformation .block-item  { background:#eee; padding:10px; margin-bottom:20px; }
 
 
 
@@ -237,12 +254,63 @@ li.menu-link .active {border-bottom: 2px solid #ef294c;}
 #block-views-block-job-event-search-block-1 .views-row {width: 100%; padding-bottom: 26px; border-bottom: 1px solid; margin-top:30px;}
 #block-views-block-job-event-search-block-1 h4 {color:#003366;}
 #views-exposed-form-job-event-search-page-1 label {display:none;}
-#views-exposed-form-job-event-search-page-1 .btn-primary {padding:.4rem 2rem;}
+#views-exposed-form-job-event-search-page-1 .btn-primary {padding:.4rem 2rem !important; margin-top:0px !important;}
 #views-exposed-form-job-event-search-page-1 .form-row {justify-content:center;}
+#views-exposed-form-search-content-page-1 .btn-primary {margin-top:0px !important;}
 
 
 .view-event-search-list {width: 100%; padding-bottom: 26px; border-bottom: 1px solid; margin-top:30px;}
+#block-takethefirststepblock {background:#e5e5e5; padding:50px 0;}
+#block-takethefirststepblock .btn-primary { margin-top:0 !important;} 
+#block-explorecareerpathsattsa .block-item { background:#e5e5e5; padding: 20px 15px;}
+#block-explorecareerpathsattsa .btn-primary { width:100%}
+#block-joinourcrucialmission {background:#e5e5e5; padding:40px 0; }
+#block-specialopportunitiesfor {background:#e5e5e5; padding:40px 0; }
+#block-searchupcomingjobevents .btn-primary { margin-top:0 !important;}
+#block-searchupcomingjobevents .form-search { margin-top:1px; border:1px solid #333333; margin-right:10px;}
+#block-federalbenifitsoverview {background:#e5e5e5; padding:40px 0; }
+#block-federalbenifitsoverview ul {margin:40px; }
+#block-federalbenifitsoverview ul li {line-height:40px; }
+#block-views-block-events-view-block-1 {padding-bottom:40px;}
+#block-views-block-events-view-block-1 .views-row {margin:10px 0;  width:100%;}
+#block-views-block-events-view-block-1 .title {background: #eee;padding: 10px 20px;}
+#block-views-block-events-view-block-1 .timing {background:#eee; text-align: center; padding: 20px 10px;}
+#block-views-block-events-view-block-1 .sharebtn {background:#eee;padding: 20px; text-align: center;}
+#block-views-block-events-view-block-1 .addtocal {background: #eee;height: 100%; ;text-align: center;padding: 20px 0;}
+#views-exposed-form-jobs-page-1 .btn-primary { margin-top:0 !important;}
+#block-theme-tsa-gov-content .views-row , #views-exposed-form-jobs-page-1 .views-row {width:100%}
+#block-exposedformjobspage-1 .form-row , #views-exposed-form-jobs-page-1 .form-row {flex-wrap:unset;}
+#block-exposedformjobspage-1 .form-row > fieldset , #views-exposed-form-jobs-page-1 .form-row > fieldset {flex:auto;}
+#block-exposedformjobspage-1 .form-control ,  #views-exposed-form-jobs-page-1 .form-control {height:50px;}
+#block-exposedformjobspage-1 .btn-primary , #views-exposed-form-jobs-page-1 .btn-primary {height:50px;}
+.block-views-exposed-filter-blockjobs-page-1 {margin:70px 0;}
+#block-feedbackblock {width:100%; margin-bottom:20px;}
+#feedback-block-form { margin:auto; max-width:70%;}
+#feedback-block-form legend {display: inline-block;width: auto;float: left;}
+#feedback-block-form .fieldset-wrapper {float: left; margin: 0px 30px;}
+#feedback-block-form .form-item-feedback-option {display: inline-block;}
+#feedback-block-form label { display: inline-block; padding: 10px 30px; font-size: var(--font-size); text-align: center;color: var(--accent); cursor: pointer; background:#006599; color:#ffffff; font-weight:bold; }
+#feedback-block-form input {display:none;}
+.feedback_message {text-align: center; font-size: 23px;}
 
+
+
+.block-block-content9b2223f6-c53c-401e-bc2d-838cb173bff5 {background:#eeeeee; padding-bottom: 48px; padding-top: 20px;}
+.block-block-contentf22f7b9e-d943-428d-af7f-8567713fd72b ul {list-style:none;}
+.block-block-content77c24779-df44-4c00-b16b-e2de640000f0 {background:#eeeeee; padding:50px 0;}
+.block-block-content012d46bb-46b4-4b12-a702-934cdc0e1536 ul {list-style:none;}
+.block-block-contentea1f0af1-1bb2-4d1f-b48c-5a4f4ae9b6c0  {background:#eeeeee; padding:50px 0;}
+.block-block-content52c4036a-69ba-46eb-9c3c-5faa865057b8  {background:#eeeeee; padding:50px 0;}
+
+.block-block-content84715b7c-380c-4dc5-8f19-d5d29cf1d394 .block-item { background:#e5e5e5; padding: 20px 15px;}
+.block-block-content864c1b47-b55c-4e6c-98f3-2920dde1f158 {background:#eeeeee; padding:50px 0;}
+.block-block-content864c1b47-b55c-4e6c-98f3-2920dde1f158 .card-header {background-color:#ffffff; border-bottom:none;}
+.card {background:none; border:none;}
+.card-body {background:#ffffff;}
+.accordion {width:100%; }
+.accordion > .card > .card-header {border-radius:5px;}
+.block-block-contentcdc3c0a4-6ac0-44a7-9a3a-16f62f7f3ea9 {background:#eeeeee; padding:50px 0;}
+.card-title {cursor:pointer;}
 
 
 
@@ -255,7 +323,7 @@ footer .container {background:#eeeeee;}
 .site-footer .content { color:#000000; }
 .site-footer__bottom .block {margin-bottom:0;}*/
 
-.site-footer {padding-bottom:0;}
+.site-footer {padding-bottom:0; padding-top:0;}
 footer .container {background:#e5e5e5; border-top:2px solid #cccccc; padding-bottom:30px;}
 footer .nav-link {color: #333333; font-size: 14px; font-weight: 700; text-transform: uppercase;}
 footer .footer-social-media-icons {width: 22px;height: 22px;margin: 0 .235rem;}
@@ -300,6 +368,7 @@ footer p {font-size: 14px; line-height: 16px; color: #333333; }
 	
 	
 	
+	
 }
 @media (min-width: 992px){
 	.navbar-expand-lg .navbar-nav .nav-link {
@@ -316,6 +385,9 @@ footer p {font-size: 14px; line-height: 16px; color: #333333; }
    h1 { font-size: 32px;font-weight: 400;  margin:20px 0;}
    h2 { font-size: 21px; margin:15px 0; line-height:35px; }
    #block-useraccountmenu ul li {width:100%}
+   #block-explorecareerpathsattsa .block-item { margin-bottom:20px;}
+   .block-block-content84715b7c-380c-4dc5-8f19-d5d29cf1d394 .block-item { margin-bottom:20px;}
+
    
 }
 @media (max-width: 414px){

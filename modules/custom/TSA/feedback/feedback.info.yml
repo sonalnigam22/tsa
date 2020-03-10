@@ -1,0 +1,5 @@
+name: Feedback Block
+type: module
+description: 'Create a block to send a feedback from user. '
+package: TSA
+core: '8.x'

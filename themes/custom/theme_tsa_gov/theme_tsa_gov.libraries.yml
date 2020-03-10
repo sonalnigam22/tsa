@@ -2,10 +2,12 @@ global-styling:
   version: VERSION
   js:
     js/global.js: {}
+    js/custom.js: {}
   css:
     component:
       css/style.css: {}
       css/colors.css: {}
+      https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css: {type: external, minified: true}
 bootstrap:
   js:
     /libraries/bootstrap/js/bootstrap.min.js: {}

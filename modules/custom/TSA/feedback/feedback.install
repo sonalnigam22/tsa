@@ -1,0 +1,69 @@
+<?php
+
+/**
+ * @file
+ * Installation functions for module.
+ */
+
+/**
+ * Implements hook_schema().
+ */
+function feedback_schema() {
+  $schema['feedback_page'] = [
+    'description' => 'Stores user feedback for a page.',
+    'fields'      => [
+      'fid'         => [
+        'description' => 'Feedback Id.',
+        'type'        => 'serial',
+        'unsigned'    => TRUE,
+        'not null'    => TRUE,
+      ],
+      'status'         => [
+        'description' => 'Processing status of the message',
+        'type'        => 'int',
+        'unsigned'    => TRUE,
+        'not null'    => TRUE,
+        'default'     => 0,
+      ],
+      'uid'         => [
+        'description' => 'User ID of the feedback provider.',
+        'type'        => 'int',
+        'unsigned'    => TRUE,
+        'not null'    => TRUE,
+        'default'     => 0,
+      ],
+      'feedback' => [
+        'description' => 'Feedback (0 = No, 1 = Yes).',
+        'type'        => 'int',
+        'size'        => 'tiny',
+        'unsigned'    => TRUE,
+        'null'        => TRUE,
+        'default'     => 0,
+      ],
+      'base_url'  => [
+        'description' => 'URL of the page.',
+        'type'        => 'text',
+        'null'        => TRUE,
+      ],
+      'system_path' => [
+        'description' => 'System path of the page where the feedback was submitted.',
+        'type'        => 'text',
+        'null'        => TRUE,
+      ],
+      'path_alias'  => [
+        'description' => 'page where the feedback was submitted.',
+        'type'        => 'text',
+        'null'        => TRUE,
+      ],
+      'timestamp'   => [
+        'description' => 'UNIX timestamp of the feedback date.',
+        'type'        => 'int',
+        'not null'    => TRUE,
+        'default'     => 0,
+      ],
+    ],
+    'primary key' => ['fid'],
+  ];
+
+  return $schema;
+}

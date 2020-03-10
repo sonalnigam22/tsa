@@ -1,5 +1,0 @@
-tsa_events.form:
-  title: Tsa Events
-  description: 'Import Events From CSV.'
-  parent: system.admin_structure
-  route_name: tsa_events.form

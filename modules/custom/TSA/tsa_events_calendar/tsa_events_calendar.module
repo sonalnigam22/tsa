@@ -1,0 +1,40 @@
+<?php
+
+/**
+ * @file
+ * Tsa Event Canlendar Views module help and theme functions.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Datetime\DrupalDateTime;
+
+// Store the preprocess theme functions in a separate .inc file.
+
+
+/**
+ * Implements hook_theme().
+ */
+ 
+\Drupal::moduleHandler()->loadInclude('tsa_events_calendar', 'inc', 'tsa_events_calendar.theme');
+function tsa_events_calendar_theme($existing, $type, $theme, $path) {
+  
+  /*return [ 
+    'views_view_unformatted__events_calendar' => [
+       'template' => 'views-view-unformatted--events_calendar',
+	   'variables'=> array('view'=>null)
+    ],
+    'eventscalendar' => [
+      'file' => 'tsa_events_calendar.theme.inc',
+    ],
+  ];*/
+  
+  return [ 
+    'views_view_unformatted__events_view__calendar_view' => [
+       'template' => 'views-view-unformatted--events_view--calendar_view',
+	   'variables'=> array('view'=>null)
+    ],
+    'eventscalendar' => [
+      'file' => 'tsa_events_calendar.theme.inc',
+    ],
+  ];
+}

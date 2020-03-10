@@ -1,0 +1,17 @@
+eventscalendar:
+  css:
+    theme:
+      css/calendar.css: {}
+ 
+  js:
+    https://static.addtoany.com/menu/page.js: { attributes: { async: true }, type: external, minified: true }
+    js/underscore-min.js: {}
+    js/bootstrap.min.js: {}
+    js/calendar.js: {}
+    js/eventcalendar.js: {}
+    
+  dependencies:
+    - core/jquery
+    - core/drupalSettings
+    - core/drupal.dialog.ajax
+

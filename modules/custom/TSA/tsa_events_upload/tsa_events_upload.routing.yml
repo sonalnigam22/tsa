@@ -1,0 +1,9 @@
+tsa_events_upload.form:
+  path: '/node/upload/tsa_events'
+  defaults:
+    _form: '\Drupal\tsa_events_upload\Form\EventsUploadForm'
+    _title: 'Upload Events'
+  requirements:
+    _role: 'event_manager+administrator'
+  options:
+    _admin_route: TRUE

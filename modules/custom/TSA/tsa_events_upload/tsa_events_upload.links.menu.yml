@@ -1,0 +1,5 @@
+tsa_events_upload.form:
+  title: Upload Events
+  description: 'Import Events From CSV.'
+  parent: system.admin_content
+  route_name: tsa_events_upload.form

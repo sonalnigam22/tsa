@@ -1,0 +1,5 @@
+feedback.report_form:
+  route_name: feedback.report_form
+  title: 'Users Feedback'
+  description: 'View users feedback.'
+  parent: system.admin_reports

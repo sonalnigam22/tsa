@@ -1,0 +1,6 @@
+'access feedback report':
+  title: 'Access user feedback report'
+  description: 'View, process, and download feedback.'
+'delete feedback':
+  title: 'Delete feedback'
+  description: 'Delete feedback from the report.'

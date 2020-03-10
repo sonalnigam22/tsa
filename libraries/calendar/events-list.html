@@ -1,0 +1,30 @@
+<span id="cal-slide-tick" style="display: none"></span>
+<div id="cal-slide-content" class="cal-event-list">
+	<ul class="unstyled list-unstyled">
+		<% _.each(events, function(event) { %>
+			<li>
+				<!--<span class="pull-left event <%= event['class'] %>"></span>-->&nbsp;
+				<div class="row">
+				<div class="col-sm-7">
+				    <h5><%= event.location %></h5>
+					<h4><a href="<%= event.url ? event.url : 'javascript:void(0)' %>" data-event-id="<%= event.id %>"
+						data-event-class="<%= event['class'] %>" class="event-item">
+						<%= event.title %>
+					</a>
+					</h4>
+				</div>
+				<div class="col-sm-2">
+                <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+				<a class="a2a_dd" data-a2a-url="<%= event.url %>" data-a2a-title="<%= event.title %>"><input type="button" class="btn btn-primary" value="Share"></a>
+					  <!--<a href="javascript:void(0);"><input type="button" class="btn btn-primary" value="Share"></a>-->
+                </div>
+                <script async src="https://static.addtoany.com/menu/page.js"></script>				 
+				</div>
+				<div class="col-sm-3">
+					<a href="/events/ics/<%= event.id %>" class="btn btn-primary">Add To Cal</a>
+				</div>
+				</div>
+			</li>
+		<% }) %>
+	</ul>
+</div>

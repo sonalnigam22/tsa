@@ -1,0 +1,5 @@
+feedback-block-form:
+  js:
+    js/feedback_form.js: {}
+  dependencies:
+    - core/jquery

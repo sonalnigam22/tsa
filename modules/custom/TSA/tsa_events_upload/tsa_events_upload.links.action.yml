@@ -1,0 +1,5 @@
+tsa_events_upload.upload:
+  route_name: tsa_events_upload.form
+  title: Upload Events
+  appears_on:
+    - system.admin_content

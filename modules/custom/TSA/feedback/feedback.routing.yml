@@ -1,0 +1,15 @@
+feedback.report_form:
+  path: /admin/reports/feedback
+  defaults:
+    _title: 'User Feedback'
+    _form: \Drupal\feedback\Form\FeedbackReportForm
+  requirements:
+    _permission: 'access feedback report'
+
+feedback.report_download_form:
+  path: /admin/reports/feedback/download
+  defaults:
+    _form: \Drupal\feedback\Form\FeedbackReportDownloadForm
+    _title: 'Feedback Report Download'
+  requirements:
+    _permission: 'access feedback report'

@@ -1,0 +1,8 @@
+tsa_events_calendar.icsfiledownload:
+  path: '/events/ics/{nid}'
+  defaults:
+    _controller: '\Drupal\tsa_events_calendar\Controller\CalendarController::icsdownload'
+  requirements:
+    _access: 'TRUE'
+    nid: '[0-9]+'
+    

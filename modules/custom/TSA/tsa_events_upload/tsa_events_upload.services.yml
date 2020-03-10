@@ -1,0 +1,4 @@
+services:
+  tsa_events_upload.parser:
+    class: Drupal\tsa_events_upload\Parser
+    arguments: ['@entity_type.manager']
