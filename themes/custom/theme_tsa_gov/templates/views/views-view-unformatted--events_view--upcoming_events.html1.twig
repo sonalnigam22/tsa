@@ -1,0 +1,58 @@
+{#
+/**
+ * @file
+ * Theme override to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ */
+#}
+{% if title %}
+  <h3>{{ title }}</h3>
+{% endif %}
+{% for row in rows %}
+  {%
+    set row_classes = [
+      default_row_class ? 'views-row',
+    ]
+  %}
+  <div{{ row.attributes.addClass(row_classes) }}>
+	  <div class="event-wrapper verticle-bar">
+			<span class="date">8 <span>Mar</span></span>
+			<div class="single-event">
+				<div class="s-event-left">
+					<span>10:00 a.m - 1:30 p.m</span>
+					<h1>Vancouver job Fair</h1>
+					<p><i class="fal fa-map-marker-alt"></i> Clark College, Vancouvre, WA</p>
+				</div>
+				<div class="s-event-right">
+					<a href="#"><i class="fal fa-share-alt"></i> Share</a>
+					|
+					<a href="#"><i class="far fa-calendar-plus"></i> Add to calendar</a>
+				</div>
+			</div>
+			<div class="single-event">
+				<div class="s-event-left">
+					<span>10:00 a.m - 1:30 p.m</span>
+					<h1>Vancouver job Fair</h1>
+					<p><i class="fal fa-map-marker-alt"></i> Clark College, Vancouvre, WA</p>
+				</div>
+				<div class="s-event-right">
+					<a href="#"><i class="fal fa-share-alt"></i> Share</a>
+					|
+					<a href="#"><i class="far fa-calendar-plus"></i> Add to calendar</a>
+				</div>
+			</div>
+		</div>
+  </div>
+{% endfor %}
+
+	

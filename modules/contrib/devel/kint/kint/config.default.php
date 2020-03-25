@@ -75,6 +75,7 @@ $_kintSettings['charEncodings'] = array(
 
 
 /** @var int max array/object levels to go deep, if zero no limits are applied */
+//$_kintSettings['maxLevels'] = 2;
 $_kintSettings['maxLevels'] = 7;
 
 
