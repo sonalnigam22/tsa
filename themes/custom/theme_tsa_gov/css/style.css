@@ -50,7 +50,7 @@ label{
 h1 { font-family: Tinos; font-size: 42px; font-style: normal; font-variant: normal; font-weight: 400;  margin:20px 0;}
 h2 { font-family: Tinos; font-size: 30px; font-style: normal; font-variant: normal; font-weight: 400;  margin:15px 0; line-height:35px; }
 h3 { font-family: Tinos; font-size: 26px; font-style: normal; font-variant: normal; font-weight: 400; margin:15px 0; line-height: 15.4px; }
-h4 { font-family: Tinos; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 700; margin:15px 0; line-height: 22.4px; }
+h4 { font-family: Tinos; font-size: 22px; font-style: normal; font-variant: normal; font-weight: 400; margin:15px 0; line-height: 26.4px; }
 p { font-family: Open Sans; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 23px; } 
 blockquote { font-family: Open Sans; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; }
 pre { font-family: Open Sans; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5667px;}
@@ -80,6 +80,7 @@ header .nav-link {color:#ffffff !important;}*/
 #header {
 	border-bottom: 1px solid #D8D8D8;
 	z-index: 999;
+	#padding:10px 0;
 }
 .navbar {padding:0 1rem }
 .header-main-nav {
@@ -91,11 +92,11 @@ header .nav-link {color:#ffffff !important;}*/
 	margin-left: 68px;
 }
 .header-main-nav li a {
-	color: #333333;
+	color: #333333 !important;
 	font-size: 12px;
 	text-transform: uppercase;
 	display: inline-block;
-	padding: 30px 15px;
+	padding: 50px 15px 35px 15px;
 	position: relative;
 	font-weight: 700;
 	text-decoration:none;
@@ -255,23 +256,42 @@ header .nav-link {color:#ffffff !important;}*/
 	bottom: -30px;*/
 }
 
-
+#block-headersearchblock {margin-right:0 !important;}
+.block-block-content {margin-bottom:50px;}
 /**** Front Page ******/
 #block-ensuresafetravelshome { margin-top:50px; }
 #block-ensuresafetravelshome h1 { border-left:4px solid #cc0033; }
-#block-ensuresafetravelshome p { padding-left:30px; }
+#block-ensuresafetravelshome p { padding-left:30px; } 
+#block-explorecareerpathsattsa { background-image: url('/themes/custom/theme_tsa_gov/images/careerpathhome.png'); background-repeat: no-repeat;    background-position: left top; height: auto; padding-top:60px;}
+#block-employeetestimonialhome { background-image: url('/themes/custom/theme_tsa_gov/images/testimonialrighthome.png'); background-repeat: no-repeat;    background-position: right top; height: auto; padding-top:60px;}
+#block-employeetestimonialhome .common-content {padding-left:0px !important; margin-left:0px !important;}
+#block-employeetestimonialhome p {padding-left:0;}
+#block-joinourcrucialmission { background-image: url('/sites/default/files/images/join-our-mission.png'); background-repeat: no-repeat; padding:40px 0; background-size:cover; color:#ffffff; text-align:center; margin-bottom:0px;}
+#block-joinourcrucialmission h2 {color:#ffffff;}
+#block-joinourcrucialmission .detail {justify-content:center;}
 
 /**** Federal Hiring Process ******/
 #block-understandingthefederalhiringprocess { margin-top:50px; }
 #block-understandingthefederalhiringprocess h1 { border-left:4px solid #cc0033; }
 #block-understandingthefederalhiringprocess p { padding-left:30px; }
+#block-careersprocessoverview {background-image: url('/themes/custom/theme_tsa_gov/images/hiring-overview-right.png'); background-repeat: no-repeat; background-position: right top; height: auto; padding-top:60px;}
 .block-block-content1c8b18fc-ba5e-428e-9fb8-76f231b6c87c .block-item {padding:50px;}
 .block-block-content1c8b18fc-ba5e-428e-9fb8-76f231b6c87c h6 {font-family: 'Open Sans', sans-serif ; font-size:14px; font-weight:bold; color:#cc0033;}
 .process-img-border1 { background-image: url('/sites/default/files/images/process-overview-border-img1.png');background-repeat: no-repeat;background-position: right bottom; }
 .process-img-border2 { background-image: url('/sites/default/files/images/process-overview-border-img2.png');background-repeat: no-repeat;background-position: right center; }
 .process-img-border3 { background-image: url('/sites/default/files/images/process-overview-border-img3.png');background-repeat: no-repeat;background-position: right top; }
-#block-views-block-block-slider-hiring-requirement-slider .owl-buttons .owl-prev { position: absolute; left: 0; top: 50%; }
-#block-views-block-block-slider-hiring-requirement-slider .owl-buttons .owl-next { position: absolute; right: 0; top: 50%; }
+#block-views-block-block-slider-hiring-requirement-slider h2 {margin-left:8.33333%;}
+#block-views-block-block-slider-hiring-requirement-slider ul {max-width:250px; display:inline-table; padding-left:20px; list-style:none;}
+#block-views-block-block-slider-hiring-requirement-slider ul li {margin-bottom:12px;}
+#block-views-block-block-slider-hiring-requirement-slider ul li:before {content:'\f111'; font-size:5px; margin-right:10px;font-family: FontAwesome; display: inline-block;}
+#block-views-block-block-slider-hiring-requirement-slider .owl-buttons .owl-prev { position: absolute; left: 0; top: 50%; visibility:hidden; }
+#block-views-block-block-slider-hiring-requirement-slider .owl-buttons .owl-next { position: absolute; right: 0; top: 50%; visibility:hidden; }
+#block-views-block-block-slider-hiring-requirement-slider .owl-buttons .owl-next:before {content: '\f105' !important; font-family: FontAwesome;
+visibility: visible !important; color: #036; font-size: 20px; border: 1px solid #000; padding: 10px 15px 10px 16px; border-radius: 53%; font-weight: normal;}
+#block-views-block-block-slider-hiring-requirement-slider .owl-buttons .owl-prev:before {content: '\f104' !important; font-family: FontAwesome;
+visibility: visible !important; color: #036; font-size: 20px; border: 1px solid #000; padding: 10px 17px 10px 15px; border-radius: 53%; font-weight: normal;}
+#block-views-block-block-slider-opportunities-for-all .owl-item .row {margin-left:0;}
+#block-additionalhiringinformation {background-image: url('/themes/custom/theme_tsa_gov/images/helpfultips-right.png'); background-repeat: no-repeat; background-position: right top; height: auto; padding-top:60px;}
 
 /**** Career Overview ******/
 #block-oneagencyendlesspossibilitiesblock { margin-top:50px; }
@@ -284,6 +304,7 @@ header .nav-link {color:#ffffff !important;}*/
 	border-bottom: 1px solid #D8D8D8;
 	margin-top: 40px;
 	margin-bottom: 10px;
+	justify-content:center;
 }
 .program-type li a,
 .program-type a {
@@ -293,6 +314,9 @@ header .nav-link {color:#ffffff !important;}*/
 	padding: 15px 0;
 	font-family: 'Tinos', serif;
 }
+
+#block-careerswithtsablock .tsa-sub-label a {display: inline; margin: 0 60px; font-size:24px;}
+
 
 .tsa-area {position: sticky;top: -168px;left: 0;right: 0;background: #fff;z-index: 9999;}
 .logo-sticky { position: absolute; left: 15px; bottom: 20px; width: 41px; transition: .3s;}
@@ -309,9 +333,6 @@ header .nav-link {color:#ffffff !important;}*/
 
 /************************************/
 
-
-
-.block-block-content {margin-bottom:50px;}
 
 .l-gray {background:#eeeeee;}
 /*------------------- Button------------------------------*/
@@ -499,6 +520,7 @@ li.menu-link .active {border-bottom: 2px solid #ef294c;}*/
 #block-applymenu .nav-link {color:#ffffff ;}
 #block-careersattsaoneagencyblock , #block-lawenforcementcareerblock {background:#eee; padding:50px 0;}
 #block-careersattsaoneagencyblock .actionbtn { margin:20px 0;}
+#block-views-block-block-slider-opportunities-for-all {margin-bottom:70px;}
 
 /**Career Page**/
 #block-careerspecifichiringinformation h2  { margin-bottom:30px; }
@@ -584,19 +606,7 @@ li.menu-link .active {border-bottom: 2px solid #ef294c;}*/
   height:auto;
 }
 
-#block-views-block-job-event-search-block-1 h2 { 
-	background-image: url('/sites/default/files/images/tsafactright.png'); 
-	background-repeat: no-repeat; 
-	background-position: left top; 
-	height: 125px; 
-	position: relative; 
-	padding-left:8.333333%;
-	text-align:left;
-	vertical-align: bottom;
-	margin:0;
-	padding-top:80px;
-	font-size:42px;
-}
+
 #block-views-block-job-event-search-block-1 .content {
     margin-top: 30px;
     margin-left:8.33%;
@@ -613,7 +623,7 @@ li.menu-link .active {border-bottom: 2px solid #ef294c;}*/
 .view-event-search-list {width: 100%; padding-bottom: 26px; border-bottom: 1px solid; margin-top:30px;}
 #block-takethefirststepblock {background:#e5e5e5; padding:50px 0;}
 #block-takethefirststepblock .btn-primary { margin-top:0 !important;} 
-#block-explorecareerpathsattsa .block-item {padding: 20px 25px;}
+#block-explorecareerpathsattsa .block-item {padding: 40px 45px 60px 45px; background: #e5e5e5;}
 #block-specialopportunitiesfor { padding:40px 0; }
 #block-searchupcomingjobevents .btn-primary { margin-top:0 !important;}
 #block-searchupcomingjobevents .form-search { margin-top:1px; border:1px solid #333333; margin-right:10px;}
@@ -627,26 +637,24 @@ li.menu-link .active {border-bottom: 2px solid #ef294c;}*/
 #block-views-block-events-view-upcoming-events .views-row {margin:10px 0;  width:100%;}
 #block-views-block-events-view-upcoming-events .title {background: #eee;padding: 10px 20px;}
 #block-views-block-events-view-upcoming-events .timing {background:#eee; text-align: center; padding: 20px 10px;}
-#block-views-block-events-view-upcoming-events .sharebtn {background:#eee;padding: 20px; text-align: center;}
+#block-views-block-events-view-upcoming-events .sharebtn {background:#eee;padding: 20px; text-align: center; }
 #block-views-block-events-view-upcoming-events .addtocal {background: #eee;height: 100%; ;text-align: center;padding: 20px 0;}
 #views-exposed-form-jobs-page-1 .btn-primary { margin-top:0 !important;}
 #block-theme-tsa-gov-content .views-row , #views-exposed-form-jobs-page-1 .views-row {width:100%}
-#block-exposedformjobspage-1 {margin-top:50px; margin-bottom:50px;}
+#block-exposedformjobspage-1 {margin-top:50px; margin-bottom:50px; background: #e5e5e5; padding: 50px 20px;}
 #block-exposedformjobspage-1 .form-row , #views-exposed-form-jobs-page-1 .form-row {flex-wrap:unset;}
 #block-exposedformjobspage-1 .form-row > fieldset , #views-exposed-form-jobs-page-1 .form-row > fieldset {flex:auto;}
 #block-exposedformjobspage-1 .form-control ,  #views-exposed-form-jobs-page-1 .form-control {height:50px;}
 #block-exposedformjobspage-1 .btn-primary , #views-exposed-form-jobs-page-1 .btn-primary {height:50px;}
-#block-joinourcrucialmission { background-image: url('/sites/default/files/images/join-our-mission.png'); background-repeat: no-repeat; padding:40px 0; background-size:cover; color:#ffffff; text-align:center;}
-#block-employeetestimonialhome .common-content {padding-left:0px !important; margin-left:0px !important;}
-#block-employeetestimonialhome p {padding-left:0;}
-#block-joinourcrucialmission h2 {color:#ffffff;}
-#block-joinourcrucialmission .detail {justify-content:center;}
+
+
+
 #block-feedbackblock {width:100%; margin-bottom:20px;}
-#feedback-block-form { margin:auto; max-width:70%;}
-#feedback-block-form legend {display: inline-block;width: auto;float: left;}
+#feedback-block-form { margin:auto; max-width:70%; }
+#feedback-block-form legend {display: inline-block;width: auto;float: left; font-family:'Tinos'; font-size:32px;}
 #feedback-block-form .fieldset-wrapper {float: left; margin: 0px 30px;}
 #feedback-block-form .form-item-feedback-option {display: inline-block;}
-#feedback-block-form label { display: inline-block; padding: 10px 30px; font-size: var(--font-size); text-align: center;color: var(--accent); cursor: pointer; background:#006599; color:#ffffff; font-weight:bold; }
+#feedback-block-form label { display: inline-block; padding: 10px 50px; font-size: var(--font-size); text-align: center;color: var(--accent); cursor: pointer; color:#006699; font-weight:bold; border: 2px solid #006699; border-radius: 5px; }
 #feedback-block-form input {display:none;}
 .feedback_message {text-align: center; font-size: 23px;}
 
@@ -689,7 +697,7 @@ li.menu-link .active {border-bottom: 2px solid #ef294c;}*/
   background-color: transparent;
   width: 40px;
   height:40px;
-  line-height: 40px;
+  line-height: 29px;
   text-align: center;
   border-radius: 50%;
 }
@@ -848,6 +856,11 @@ li.menu-link .active {border-bottom: 2px solid #ef294c;}*/
 	color: #006699;
 	font-weight: bold;
 	font-size: 15px;
+}
+
+.learn-more:after {
+   content:'\003E';
+   margin-left:8px;
 }
 
 .learn-more:hover {

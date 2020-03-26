@@ -103,7 +103,7 @@
 				});
 				
 				$(function() {
-					  $('a[href*="#"]').smoothscroll({duration:  1000,
+					  $('#tsa a[href*="#"]').smoothscroll({duration:  1000,
 						  easing: 'easeOutCirc',
 						  offset: 0,
 						  hash: false,});

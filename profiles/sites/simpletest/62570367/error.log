@@ -1,1 +1,0 @@
-[13-Mar-2020 06:10:54 Australia/Sydney] PHP Fatal error:  Cannot redeclare Drupal\tsa_phpunit_example\Controller\PHPUnitExampleController::getModuleName() in C:\xampp\htdocs\tsagov-local\modules\custom\TSA\tsa_phpunit_example\src\Controller\PHPUnitExampleController.php on line 44
