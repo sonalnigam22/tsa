@@ -756,7 +756,7 @@ $settings['entity_update_backup'] = TRUE;
    include $app_root . '/' . $site_path . '/settings.local.php';
  }
 $databases['default']['default'] = array (
-  'database' => 'careers_devnew3',
+  'database' => 'careers_dev',
   'username' => 'root',
   'password' => '',
   'prefix' => '',
